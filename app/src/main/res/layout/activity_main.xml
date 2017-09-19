@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.currencyconverter.MainActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_marginTop="36dp"
+        android:text="@string/currency_converter"
+        style="@style/HeaderStyle"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/editText2"
+        android:layout_toStartOf="@+id/editText2" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/CountryStyle"
+        android:layout_above="@+id/spinner"
+        android:layout_alignLeft="@+id/spinner2"
+        android:layout_alignStart="@+id/spinner2"
+        android:layout_marginBottom="23dp"
+        android:text="@string/country" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner2"
+        android:layout_alignStart="@+id/spinner2"
+        android:layout_below="@+id/spinner2"
+        android:layout_marginTop="56dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/CountryStyle"
+        android:layout_alignBottom="@+id/spinner"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_marginBottom="20dp"
+        android:text="@string/country" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="128dp"
+         />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/moneyGreen"
+        android:backgroundTint="@color/moneyGreen"
+        android:layout_marginRight="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <Button
+        android:id="@+id/button"
+        style="@style/ButtonStyle"
+        android:text="@string/submit"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/spinner"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/spinner"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="113dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:textColor="@color/moneyGreen"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_alignTop="@+id/spinner"
+        android:textColor="@color/redColor"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
